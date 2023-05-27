@@ -46,7 +46,7 @@ public class StudentServiceImpl implements StudentService {
             return student.get();
         }
         else
-            return Student.builder().id("-99999").firstName("Not Found").lastName("Not Found").email("Not Found").build();
+            return new Student();
     }
 
     @Override
